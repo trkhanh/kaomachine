@@ -50,7 +50,6 @@ This repo builds on the awesome work from the following repos:
 * [Elasticsearch](https://www.joyent.com/content/02-public-cloud/02-benchmarks/01-elasticsearch/header.png?v=1433286522)
 * [Node.js](https://nodejs.org/images/logos/nodejs.png)
 * [JSHint](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/03/1425566554jshint-logo.png)
-* [Ruby](http://www.unixstickers.com/image/cache/data/stickers/ruby/ruby.sh-600x600.png)
 * [less](http://www.endertech.com/wp-content/uploads/2014/10/LESSLogo.jpeg)
 * [Java](http://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/50fd97744110dcbce1acde889c0870599c9d5584/icons/java.svg)
 * [Android](http://www.android.com/media/android_vector.jpg)

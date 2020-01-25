@@ -49,12 +49,6 @@ brew install wget --with-iri
 brew install python
 brew install python3
 
-# Install ruby-build and rbenv
-# brew install ruby-build
-# brew install rbenv
-# LINE='eval "$(rbenv init -)"'
-# grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
-
 # Install more recent versions of some OS X tools.
 # brew install vim --override-system-vi
 # brew install homebrew/dupes/grep
