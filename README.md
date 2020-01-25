@@ -82,7 +82,6 @@ This repo takes a more **light-weight** approach to automation using a combinati
 * [Vagrant](#vagrant)
 * [Docker](#docker)
 * [Homebrew](#homebrew)
-* [Ruby and rbenv](#ruby-and-rbenv)
 * [Python](#python)
 * [Pip](#pip)
 * [Virtualenv](#virtualenv)
@@ -752,53 +751,6 @@ To see what you have installed (with their version numbers):
 
     $ brew list --versions
 
-### Ruby and rbenv
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/ruby.png">
-  <br/>
-</p>
-
-[Ruby](http://www.ruby-lang.org/) is already installed on Unix systems, but we don't want to mess around with that installation. More importantly, we want to be able to use the latest version of Ruby.
-
-#### Installation
-
-`brew.sh` provides [rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/rbenv/ruby-build) which allow you to manage multiple versions of Ruby on the same machine.  `brew.sh` adds the following line to your `.extra` file to initialize `rbenv`:
-
-```
-eval "$(rbenv init -)"
-```
-
-#### Usage
-
-`rbenv` uses `ruby-build` to download, compile, and install new versions of Ruby. You can see all versions available to download and install:
-
-```
-$ ruby-build --definitions
-```
-
-To install a new version of Ruby:
-
-```
-# list all available versions installed on the system:
-$ rbenv install -l
-
-# install a Ruby version:
-$ rbenv install 2.2.3
-```
-
-To switch Ruby versions:
-
-```
-# set a local application-specific Ruby version in the current directory
-$ rbenv local 1.9.3
-
-# set the global version of Ruby to be used in all shells
-$ rbenv global 2.0.0
-
-```
-
-`rbenv` by default will install Ruby versions into a directory of the same name under `~/.rbenv/versions`. Because your user owns this directory, you no longer need to use `sudo` to install gems.
 
 ### Python
 
