@@ -12,7 +12,7 @@ Setting up a new developer machine can be an **ad-hoc, manual, and time-consumin
 * **OS X updates and Xcode Command Line Tools**
 * **OS X defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, Python, etc
-* **Developer apps**: iTerm2, Sublime Text, Atom, VirtualBox, Vagrant, Docker, Chrome, etc
+* **Developer apps**: iTerm2, VirtualBox, Vagrant, Docker, Chrome, etc
 * **Python data analysis**: IPython Notebook, NumPy, Pandas, Scikit-Learn, Matplotlib, etc
 * **Big Data platforms**: Spark (with IPython Notebook integration) and MapReduce
 * **Cloud services**: Amazon Web Services (Boto, AWS CLI, S3cmd, etc) and Heroku
@@ -72,8 +72,6 @@ This repo takes a more **light-weight** approach to automation using a combinati
 
 ## Section 2: General Apps and Tools
 
-* [Sublime Text](#sublime-text)
-* [Atom](#atom)
 * [Terminal Customization](#terminal-customization)
 * [iTerm2](#iterm2)
 * [Vim](#vim)
@@ -324,7 +322,7 @@ Once you reach the downloads page, search for "command line tools", and download
 
 When setting up a new Mac, you may want to install [Homebrew](http://brew.sh/), a package manager that simplifies installing and updating applications or libraries.
 
-Some of the apps installed by the `brew.sh` script include: Chrome, Firefox, Sublime Text, Atom, Dropbox, Evernote, Skype, Slack, Alfred, VirtualBox, Vagrant, Docker, etc.  **For a full listing of installed formulae and apps, refer to the commented [brew.sh source file](https://github.com/donnemartin/dev-setup/blob/master/brew.sh) directly and tweak it to suit your needs.**
+Some of the apps installed by the `brew.sh` script include: Chrome, Firefox, Dropbox, Evernote, Skype, Slack, Alfred, VirtualBox, Vagrant, Docker, etc.  **For a full listing of installed formulae and apps, refer to the commented [brew.sh source file](https://github.com/donnemartin/dev-setup/blob/master/brew.sh) directly and tweak it to suit your needs.**
 
 Run the `brew.sh` script:
 
@@ -432,104 +430,24 @@ To set up an Android development environment, run the `android.sh` script:
 
 ## Section 2: General Apps and Tools
 
-### Sublime Text
+### Visual Studio Code
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/sublime.png">
+  <img src="https://mospaw.com/wp-content/uploads/2018/07/Visual_Studio_code_logo.png">
   <br/>
 </p>
 
-With the terminal, the text editor is a developer's most important tool. Everyone has their preferences, but unless you're a hardcore [Vim](http://en.wikipedia.org/wiki/Vim_(text_editor)) user, a lot of people are going to tell you that [Sublime Text](http://www.sublimetext.com/) is currently the best one out there.
+[VSC](https://code.visualstudio.com) Visual Studio Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools..
 
 #### Installation
 
-The [brew.sh script](#brewsh-script) installs Sublime Text.
+The [brew.sh script](#brewsh-script) installs VSC.
 
-If you prefer to install it separately, go ahead and [download](http://www.sublimetext.com/) it. Open the **.dmg** file, drag-and-drop in the **Applications** folder.
-
-**Note**: At this point I'm going to create a shortcut on the OS X Dock for both for Sublime Text. To do so, right-click on the running application and select **Options > Keep in Dock**.
-
-Sublime Text is not free, but I think it has an unlimited "evaluation period". Anyhow, we're going to be using it so much that even the seemingly expensive $70 price tag is worth every penny. If you can afford it, I suggest you [support](http://www.sublimetext.com/buy) this awesome tool.
+If you prefer to install it separately, [download](https://code.visualstudio.com) it, open the **.dmg** file, drag-and-drop in the **Applications** folder.
 
 #### Configuration
 
-The [osx.sh script](#osxsh-script) contains Sublime Text configurations.
-
-#### Soda Theme
-
-The [Soda Theme](https://github.com/buymeasoda/soda-theme) is a great UI theme for Sublime Text, especially if you use a dark theme and think the side bar sticks out like a sore thumb.
-
-##### Installation with Sublime Package Control
-
-If you are using Will Bond's excellent [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install Soda Theme via the `Package Control: Install Package` menu item. The Soda Theme package is listed as `Theme - Soda` in the packages list.
-
-##### Installation with Git
-
-Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text application settings area.
-
-You can locate your Sublime Text `Packages` directory by using the menu item `Preferences -> Browse Packages...`.
-
-While inside the `Packages` directory, clone the theme repository using the command below:
-
-    $ git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
-
-##### Activating the Theme on Sublime Text 2
-
-* Open your User Settings Preferences file `Sublime Text 2 -> Preferences -> Settings - User`
-* Add (or update) your theme entry to be `"theme": "Soda Light.sublime-theme"` or `"theme": "Soda Dark.sublime-theme"`
-
-**Example Sublime Text 2 User Settings**
-
-    {
-        "theme": "Soda Light.sublime-theme"
-    }
-
-##### Activating the Theme on Sublime Text 3
-
-* Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`
-* Add (or update) your theme entry to be `"theme": "Soda Light 3.sublime-theme"` or `"theme": "Soda Dark 3.sublime-theme"`
-
-**Example Sublime Text 3 User Settings**
-
-    {
-        "theme": "Soda Light 3.sublime-theme"
-    }
-
-##### Changing Monokai Comment Color
-
-Although Monokai is a great color scheme, I find that comments can be difficult to see.  You can follow these [instructions](http://stackoverflow.com/a/32686509) to change the color of the default theme.
-
-I set my comments color to `#E6DB74`.
-
-```
-<dict>
-    ...
-    <dict>
-        <key>foreground</key>
-        <string>#E6DB74</string>
-    </dict>
-    ...
-</dict>
-```
-
-### Atom
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/atom.png">
-  <br/>
-</p>
-
-[Atom](https://github.com/atom/atom) is a great open-source editor from GitHub that is rapidly gaining contributors and popularity.
-
-#### Installation
-
-The [brew.sh script](#brewsh-script) installs Atom.
-
-If you prefer to install it separately, [download](https://atom.io/) it, open the **.dmg** file, drag-and-drop in the **Applications** folder.
-
-#### Configuration
-
-Atom has a great package manager that allows you to easily install both core and community packages.
+VSC has a great package manager that allows you to easily install both core and community packages.
 
 ### Terminal Customization
 

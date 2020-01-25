@@ -132,6 +132,7 @@ brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" visual-studio-code
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
