@@ -18,7 +18,6 @@ Setting up a new developer machine can be an **ad-hoc, manual, and time-consumin
 * **Cloud services**: Amazon Web Services (Boto, AWS CLI, S3cmd, etc) and Heroku
 * **Common data stores**: MySQL, PostgreSQL, MongoDB, Redis, and Elasticsearch
 * **Javascript web development**: Node.js, JSHint, and Less
-* **Android development**: Java, Android SDK, Android Studio, IntelliJ IDEA
 
 ### But...I Don't Need All These Tools!
 
@@ -67,8 +66,6 @@ This repo takes a more **light-weight** approach to automation using a combinati
     * Sets up common data stores
 * [web.sh script](#websh-script)
     * Sets up JavaScript web development
-* [android.sh script](#androidsh-script)
-    * Sets up Android development
 
 ## Section 2: General Apps and Tools
 
@@ -130,14 +127,8 @@ This repo takes a more **light-weight** approach to automation using a combinati
 * [JSHint](#jshint)
 * [Less](#less)
 
-## Section 7: Android Development
 
-* [Java](#java)
-* [Android SDK](#android-sdk)
-* [Android Studio](#android-studio)
-* [IntelliJ IDEA](#intellij-idea)
-
-## Section 8: Misc
+## Section : Misc
 
 * [Contributions](#contributions)
 * [Credits](#credits)
@@ -196,9 +187,7 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh`, `pydata.sh`, `aws.sh`
     * Sets up common data stores
 * [web.sh](https://github.com/donnemartin/dev-setup/blob/master/web.sh)
     * Sets up JavaScript web development
-* [android.sh](https://github.com/donnemartin/dev-setup/blob/master/android.sh)
-    * Sets up Android development
-
+    
 **Notes:**
 
 * `.dots` will initially prompt you to enter your password.
@@ -414,19 +403,6 @@ To set up a JavaScript web development environment, Run the `web.sh` script:
     $ ./web.sh
 
 [Section 6: Web Development](#section-6-web-development) describes the installed packages and usage.
-
-### android.sh script
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/android.png">
-  <br/>
-</p>
-
-To set up an Android development environment, run the `android.sh` script:
-
-    $ ./android.sh
-
-[Section 7: Android Development](#section-7-android-development) describes the installed packages and usage.
 
 ## Section 2: General Apps and Tools
 
@@ -1674,68 +1650,6 @@ The two options are the "input" and "output" files for the compiler. The command
     $ lessc less/template.less css/template.css
 
 Read more about LESS on their page here: http://lesscss.org/
-
-## Section 7: Android Development
-
-***This section is under development.***
-
-### Java
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/java.png">
-  <br/>
-</p>
-
-#### Installation
-
-The [android.sh script](#androidsh-script) installs Java.
-
-If you prefer to install it separately, you can download the JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or run:
-
-    $ brew update
-    $ brew install caskroom/cask/brew-cask
-    $ brew cask install --appdir="~/Applications" java
-
-### Android SDK
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/androidsdk.png">
-  <br/>
-</p>
-
-The [android.sh script](#androidsh-script) installs the Android SDK.
-
-If you prefer to install it separately, you can download it [here](https://developer.android.com/sdk/index.html).
-
-### Android Studio
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/androidstudio.png">
-  <br/>
-</p>
-
-The [android.sh script](#androidsh-script) installs Android Studio.
-
-If you prefer to install it separately, you can download it [here](https://developer.android.com/sdk/index.html) or run:
-
-    $ brew update
-    $ brew install caskroom/cask/brew-cask
-    $ brew cask install --appdir="~/Applications" android-studio
-
-### IntelliJ IDEA
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/intellij.png">
-  <br/>
-</p>
-
-The [android.sh script](#androidsh-script) installs Java.
-
-If you prefer to install it separately, you can download it [here](https://www.jetbrains.com/idea/download/) or run:
-
-    $ brew update
-    $ brew install caskroom/cask/brew-cask
-    $ brew cask install --appdir="~/Applications" intellij-idea-ce
 
 ## Section 8: Misc
 
