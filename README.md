@@ -1,4 +1,4 @@
-dev-setup
+Developer Setup 
 ============
 
 <p align="center">
@@ -418,6 +418,8 @@ To set up a JavaScript web development environment, Run the `web.sh` script:
 #### Installation
 
 The [brew.sh script](#brewsh-script) installs VSC.
+*For win 10*
+Clone the script to your local and execute it by PS 
 
 If you prefer to install it separately, [download](https://code.visualstudio.com) it, open the **.dmg** file, drag-and-drop in the **Applications** folder.
 
