@@ -1,0 +1,22 @@
+---
+
+- name: install vim apt packages
+  apt:
+    name: "{{ vim_apt_packages }}"
+    state: present
+    force_apt_get: yes
+
+- block:
+    - name: clone amix vimrc git repo
+      git:
+        repo: "{{ vim_amix_vimrc_url }}"
+        dest: "~{{ local_username }}/.vim_runtime"
+        depth: 1
+
+    - name: install amix vimrc
+      shell: "sh ~/.vim_runtime/install_awesome_vimrc.sh"
+
+  become: yes
+  become_user: "{{ local_username }}"
+
+...

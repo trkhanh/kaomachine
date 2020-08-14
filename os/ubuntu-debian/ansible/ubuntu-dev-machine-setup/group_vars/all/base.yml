@@ -1,0 +1,143 @@
+---
+
+base_archiving_tools:
+  - arj
+  - cabextract
+  - file-roller
+  - mpack
+  - p7zip-full
+  - p7zip-rar
+  - rar
+  - sharutils
+  - unace
+  - unrar
+  - unzip
+  - uudeview
+  - zip
+
+base_productivity_tools:
+  - libreoffice
+
+base_system_tools:
+  - fatrace
+  - gnome-calculator
+  - gnome-shell-extension-bluetooth-quick-connect  # enable in gnome-tweak-tools > Extensions
+  - gnome-shell-timer  # enable in gnome-tweak-tools > Extensions
+  - gnome-tweak-tool
+  - progress
+  - pwgen
+  #- syncthing
+
+base_system_tools_laptop:
+#  - cpufrequtils
+#  - powertop
+  - tlp
+  - tlp-rdw
+  - acpi-call-dkms  # for newer ThinkPads (X220/T420 and later)
+#  - tp-smapi-dkms  # for older ThinkPads
+
+base_download_tools:
+  - aria2
+  - axel
+  - qbittorrent
+  - speedtest-cli
+  - wget
+  - youtube-dl
+
+base_developer_tools:
+  - android-tools-adb
+  - android-tools-fastboot
+  - ansible
+  - ansible-lint
+  - awscli
+  - bat
+  - cloc
+  - clusterssh
+  - colordiff
+  - curl
+  - default-jre-headless
+  - dos2unix
+  - expect
+  - filezilla
+  - fonts-powerline
+  - g++
+  - gedit-plugins
+  - geoip-bin
+  - ghostwriter
+  - git
+  - git-extras
+  - gitg
+  - golang-go
+  - htop
+  - httpie
+  - inotify-tools
+  - ipython3
+  - jq
+  - kwalify
+  - makeself
+  - meld
+  - miller
+  - most
+  - netcat
+  - nmap
+  - nodejs
+  - pandoc
+  - parallel
+  - pep8
+  - pipenv
+  - powerline
+  - pry
+  - pssh
+  #- puppet
+  #- puppet-lint
+  - pv
+  - pylint
+  - python3-demjson  # provides jsonlint-py3 for json lint
+  - python3-jmespath
+  - python3-pep8
+  - python3-pip
+  - ranger
+  - recode
+  - remmina
+  - rename
+  - ruby
+  - ruby-dev
+  - shellcheck
+  - siege
+  - socat
+  - sshfs
+  - sshpass
+  - tilix
+  - tldr
+  - tmux
+  - tmuxp
+  - tree
+  - uget
+  - xclip
+  - yamllint
+  - zeal
+
+base_virtualization_tools:
+  - vagrant
+  - virtualbox
+#  - virtualbox-ext-pack
+  - docker.io
+  - docker-compose
+
+base_media_tools:
+  - ffmpeg
+  - gimp
+  - imagemagick
+  - libimage-exiftool-perl
+  - mediainfo
+  - soundconverter
+  - totem
+#  - ubuntu-restricted-extras
+  - vlc
+
+base_git_bash_prompt_url: "https://github.com/magicmonty/bash-git-prompt.git"
+
+base_openssh_server:
+  apt_package: openssh-server
+  service: ssh
+...

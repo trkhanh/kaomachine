@@ -1,0 +1,61 @@
+---
+
+- block:
+    - name: create local fonts directory
+      file:
+        path: "~{{ local_username }}/.local/share/fonts"
+        state: directory
+  become: yes
+  become_user: "{{ local_username }}"
+
+- block:
+    - name: download nerd fonts to local fonts folder
+      get_url:
+        url: "{{ item  }}"
+        dest: "~{{ local_username }}/.local/share/fonts/"
+      with_items: "{{ terminal_customizations_nerd_fonts }}"
+  become: yes
+  become_user: "{{ local_username }}"
+
+- name: refresh fonts cache
+  shell: "fc-cache -fv"
+  become: yes
+  become_user: "{{ local_username }}"
+
+# fix for https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue using option 2
+# also, set font to SourceCodePro+Powerline+Awesome Regular for tmux powerline
+- block:
+    - name: copy tilix config template
+      copy:
+        src: tilix.dconf
+        dest: /tmp/tilix.dconf
+        force: yes
+
+    - name: import modified tilix config
+      shell: dconf load /com/gexperts/Tilix/ < /tmp/tilix.dconf
+      ignore_errors: yes
+  become: yes
+  become_user: "{{ local_username  }}"
+
+# sample .tmux.conf file ready to use
+- block:
+    - name: check if .tmux.conf exists in user's home dir
+      stat:
+        path: "~{{ local_username }}/.tmux.conf"
+      register: dottmuxdotconf
+
+    - name: backup .tmux.conf if it exists
+      copy:
+        src: "~{{ local_username }}/.tmux.conf"
+        dest: "~{{ local_username }}/.tmux.conf.orig"
+      when: dottmuxdotconf.stat.exists
+
+    - name: copy the sample .tmux.conf file
+      copy:
+        src: .tmux.conf
+        dest: "~{{ local_username }}/.tmux.conf"
+        force: yes
+  become: yes
+  become_user: "{{ local_username }}"
+
+...

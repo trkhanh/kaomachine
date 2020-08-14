@@ -1,0 +1,20 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: remove redundant packages
+      apt:
+          autoremove: yes
+          force_apt_get: yes
+
+    - name: display post install message
+      debug:
+        msg:
+          - 'Manual steps left to do:'
+          - '- git clone the dotfiles repo (optional)'
+          - '- add noatime option for your SSD mounts points in /etc/fstab (optional)'
+          - '- remove snapd: sudo apt purge snapd; sudo apt-mark hold snapd (optional)'
+          - '- enable WebRender in firefox; about:config in address bar, then manually set the gfx.webrender.enabled or gfx.webrender.all pref to true (optional)'
+          - '- Reboot your system'
+
+...
