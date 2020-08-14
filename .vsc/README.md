@@ -1,0 +1,1 @@
+Because we construct for whole codeing experience at here then please make sure ps1 and bash in a same page 
