@@ -247,7 +247,7 @@ My `~/.extra` looks something like this:
 
 ```bash
 # Git credentials
-GIT_AUTHOR_NAME="Donne Martin"
+GIT_AUTHOR_NAME="Khanh Tran"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="donne.martin@gmail.com"
