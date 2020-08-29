@@ -1,9 +1,9 @@
-Developer Setup 
+Kao Engineer Setup 
 ============
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/repo-header.gif">
-</p>
+</p> -->
 
 ## Motivation
 
