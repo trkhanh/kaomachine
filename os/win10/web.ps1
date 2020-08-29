@@ -24,4 +24,7 @@ choco install vscode-drawio
 
 choco install sqlite -y
 
+# WSL X-11 Server 
+choco install vcxsrv
+
 @pause
