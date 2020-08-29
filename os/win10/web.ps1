@@ -24,7 +24,7 @@ choco install vscode-drawio
 
 choco install sqlite -y
 
-# WSL X-11 Server 
+# WSL X-11 Server for ubuntu Electon development
 choco install vcxsrv
 
 @pause
