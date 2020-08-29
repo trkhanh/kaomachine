@@ -40,3 +40,8 @@ echo -e "\e[92m installing webpack \e[39m"
 sudo npm install -g webpack
 
 echo -e "\e[92m webpack installed successfully \e[39m"
+
+# remove Stupid Nano
+sudo apt-get remove nano
+echo -e "\e[92m nano remove successfully \e[39m"
+
