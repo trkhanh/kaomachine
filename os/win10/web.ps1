@@ -15,10 +15,17 @@ npm install -g webpack -y
 
 choco install yarn -y
 
-choco install sublimetext3 -y
+choco install vim -y
 
 choco install googlechrome -y
 
+choco install vscode
+
+choco install vscode-drawio 
+
 choco install sqlite -y
+
+# WSL X-11 Server for ubuntu Electon development
+choco install vcxsrv
 
 @pause
