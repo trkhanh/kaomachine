@@ -63,3 +63,4 @@ code --install-extension christian-kohler.path-intellisense
 # Theme 
 code --install-extension xaver.theme-ysgrifennwr	
 code --install-extension PKief.material-icon-theme
+
