@@ -6,23 +6,33 @@
 
 3. Setup VSCode:
 
-    1. Open File -> Preferences -> Settings
-    2. Top right click on {} and the user settings (settings.json) will open up
-    3. Add the following lines:
+   1. Open File -> Preferences -> Settings
+   2. Top right click on {} and the user settings (settings.json) will open up
+   3. Add the following lines:
 
-    ```"editor.fontFamily": "'Fira Code'",
-    "editor.fontLigatures": true,```
-    > Note: I had to comment out the normal font family entry which I can switch back to by reversing the process.
-    4. To change the font weight add any of the following lines but not all
+   ```
+   "editor.fontFamily": "'Fira Code'",
+   "editor.fontLigatures": true,
+   ```
 
-    ```"editor.fontWeight": "300" // Light
-    "editor.fontWeight": "400" // Regular
-    "editor.fontWeight": "500" // Medium
-    "editor.fontWeight": "600" // Bold```
-    5. Restart and enjoy.
+   > Note: I had to comment out the normal font family entry which I can switch back to by reversing the process.
 
-My sample user settings.json
-```{
+   4. To change the font weight add any of the following lines but not all
+
+   ```
+   "editor.fontWeight": "300" // Light
+   "editor.fontWeight": "400" // Regular
+   "editor.fontWeight": "500" // Medium
+   "editor.fontWeight": "600" // Bold
+   ```
+
+   5. Restart and enjoy.
+
+![](https://raw.githubusercontent.com/trkhanh/kaomachine/master/assets/71eSL.png)
+
+### My sample user settings.json
+
+````{
     "files.autoSave": "onFocusChange",
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -42,3 +52,4 @@ My sample user settings.json
     // "editor.fontWeight": "500", // Medium
     // "editor.fontWeight": "600" // Bold
 }```
+````
