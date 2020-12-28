@@ -1,4 +1,5 @@
-# To set this beautiful fonts up use the following steps
+## FONT
+## To set this beautiful fonts up use the following steps
 
 1. Download the fonts from here
 
